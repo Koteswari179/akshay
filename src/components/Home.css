@@ -3,8 +3,37 @@
   justify-content: space-between;
   align-items: center;
   margin-top: 50px;
+  
 
 }
+.home-left {
+  opacity: 0; /* Start hidden */
+  transform: translateY(100px); /* Start from below */
+  animation: slideUp 1s forwards; /* Trigger animation */
+  animation-delay: 0.5s; /* Add delay if necessary */
+}
+
+@keyframes slideUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.home-left h1,
+.home-left p,
+.home-left-button {
+  opacity: 0; /* Start hidden */
+  transform: translateY(50px); /* Start from below */
+  animation: slideUp 1s forwards; /* Trigger animation */
+}
+
+
+
+.home-left-button {
+  animation-delay: 1.5s; /* Animation delay for button */
+}
+
 
 
 
@@ -14,6 +43,8 @@
   margin-left: 100px;
   margin-right: 100px;
   margin-top: 100px;
+  animation-delay: 0.5s; /* Animation delay for h1 */
+
 
 }
 
@@ -22,6 +53,8 @@
   font-size: 23px;
   margin-right: 100px;
   margin-left: 100px;
+  animation-delay: 1s; /* Animation delay for p */
+
 
 }
 .home-left  {
@@ -342,7 +375,7 @@
   display: flex;
   align-items: center; /* Vertically center align items */
   justify-content: center; /* Horizontally center align items */
-  margin-top: 100px;
+  margin-top: 200px;
 }
 .features-title {
   display: flex;
@@ -612,4 +645,14 @@ margin-top: 20px;
 
 
 
+@keyframes slideUp {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 
