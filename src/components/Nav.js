@@ -9,6 +9,8 @@ const Nav = () => {
     }
   };
 
+  
+
   return (
     <div className="nav-container">
       <div className="left-section">
@@ -21,7 +23,7 @@ const Nav = () => {
           <li><a href="#about" onClick={() => scrollToSection('about')}>About</a></li>
           <li><a href="#services" onClick={() => scrollToSection('services')}>Services</a></li>
         </ul>
-        <button className="contact-button" onClick={() => scrollToSection('contact')}>Contact</button>
+        <button className="contact-button" onClick={() => scrollToSection('contact')}>Contact Us</button>
       </div>
     </div>
   );

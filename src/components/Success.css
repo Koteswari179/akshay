@@ -2,7 +2,7 @@
 
 .success-container {
     background-color: #000000;
-    text-align: center;
+    text-align: left;
     color: white;
     height: 100vh; /* Set the container height to fill the viewport */
     display: flex;
@@ -23,24 +23,20 @@
   .success-content h1 {
     font-size: 24px;
     margin-bottom: 20px;
-    text-align: center;
-    margin-left: 100px;
+    text-align: left;
   }
   
   .success-content a {
-    display: inline-block;
-    background-color: white;
-    color: black;
+    display: flex;
+    align-items: center;
     text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    transition: background-color 0.3s;
+    color: green; /* Adjust as needed */
+    font-size: 18px; /* Adjust as needed */
+  }
+    
+  .success-content i {
+    margin-right: 8px; /* Adjust spacing as needed */
+    font-size: 25px; /* Adjust icon size as needed */
   }
   
-  .success-content a:hover {
-    background-color: #0056b3;
-  }
-  
-
-
   

@@ -23,7 +23,6 @@
 
 
 import React from 'react';
-import ServicesRows from './components/ServicesRows';
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './components/Home';
@@ -31,7 +30,6 @@ import Success from './components/Success';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import 'boxicons/css/boxicons.min.css';
 import 'aos/dist/aos.css';
-import 'remixicon/fonts/remixicon.css';
 import Nav from './components/Nav';
 import 'remixicon/fonts/remixicon.css'; // Import Remix Icon CSS
 import Footer from './components/Footer';
@@ -46,7 +44,6 @@ function App() {
           <Route path="/success" element={<Success />} />
           <Route path="/footer" element={<Footer />} />
           <Route path="/nav" element={<Nav />} />
-          <Route path="/service" element={<ServicesRows />} />
 
 
 
